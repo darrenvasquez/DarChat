@@ -1,0 +1,9 @@
+#hello
+#local-range isn't used yet, but the range currently is 300.
+local-range: 300
+#please be sure that DarCraft has the plugins PermissionsEx and DarUUID before running this plugin.
+focus-channel:
+  'test': G
+#if set to true, player will receive messages from the roleplay channel when they are online
+roleplay-active:
+  'test': true

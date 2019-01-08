@@ -1,0 +1,19 @@
+name: DarChat
+main: net.darr3n911.darchat.DarChat
+version: 1.0
+commands:
+  g:
+    aliases: global
+  l:
+    aliases: local
+  d:
+  rp:
+  st:
+  saveconfig:
+  rptoggle:
+  darchat:
+  slm:
+  gmute:
+  darchat-testing:
+  ch:
+    aliases: herochat
