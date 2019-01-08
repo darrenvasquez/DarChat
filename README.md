@@ -19,6 +19,12 @@ For now, this plugin is unusable without the custom plugin DarUUID created speci
 
 This is a chatting plugin. The purpose of this plugin is to allow users to communicate with each other through the use of different chat channels. The features implemented include:
 
+- 5 Different Chat Channels
+  - Global - (/g) default channel, sends to all players, all players have access
+  - Local - (/l) send a message to players around you, all players have access
+  - Donator - (/d) send a message to those with a Donator or Staff rank
+  - RolePlay - (/rp) send a message to those with this chat channel enabled (strictly for "Role Playing")
+  - Staff - (/st) send a message to fellow staff members
 - Permissions-based channels
 - The ability to "focus" in on a channel, meaning any regular chat will be automatically sent to the focused channel.
 - Distance-based channels
@@ -41,15 +47,14 @@ This is a chatting plugin. The purpose of this plugin is to allow users to commu
     - Rank/Name ⇒ Utilize [SuggestCommand](https://ci.md-5.net/job/BungeeCord/ws/chat/target/apidocs/net/md_5/bungee/api/chat/ClickEvent.Action.html#SUGGEST_COMMAND) to autofill the command to message the player, minus the actual message.
     - Chat Channel Indicator ⇒ Utilize [RunCommand](https://ci.md-5.net/job/BungeeCord/ws/chat/target/apidocs/net/md_5/bungee/api/chat/ClickEvent.Action.html#RUN_COMMAND) to run a command on the user's behalf to automatically switch to that channel
     - Chat Message ⇒ Ø
+- Moderation Commands
+  - Send a local message to players near specified coordinates (ex. /slm 150 68 -234 hello!)
+  - Log local chat and send it to online staff (implements HoverEvent and ClickEvent)
+  - Ability to mute players from Global Chat, preventing them from typing in that channel.
+- Admin Logging
+  - Log all chat in every channel to one .log file
+    - This is externally saved and then cleared each night
+  - Shows proper details, such as exact date and time the message was sent, and player location if it is a Local chat message
     
     
-. . . WIP . . .
-
-to do:
-- admin commands
-  - send local message
-  - log local chat
-  - mute
-- admin logging
-  - log all chat and its' info to a .log file that, externally, will be saved and deleted each night.
-and more...
+ // README.md is not complete
