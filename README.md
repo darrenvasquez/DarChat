@@ -29,18 +29,27 @@ This is a chatting plugin. The purpose of this plugin is to allow users to commu
 - Option to hide chat from certain channels (ex. the "Role Play" channel)
 - Ability to implement chat filtering plugins
   - Use [EventPriority.HIGH](https://bukkit.gamepedia.com/Event_API_Reference#Event_Priorities) or lower.
-  - Built-in caps check (Example: "HELLO FRIENDS" => "Hello friends")
+  - Built-in caps check (Example: "HELLO FRIENDS" ⇒ "Hello friends")
 - Permissions-based chat colors
 - [HoverEvent](https://ci.md-5.net/job/BungeeCord/ws/chat/target/apidocs/net/md_5/bungee/api/chat/HoverEvent.html) implementation
   - Hovering over different parts of a line of chat will display different things
-    - Rank/Name => Show Username, Rank, and a "Click to Send a Private Message" option
-    - Chat Channel Indicator => Show Channel Name
-    - Chat Message => Ø
+    - Rank/Name ⇒ Show Username, Rank, and a "Click to Send a Private Message" option
+    - Chat Channel Indicator ⇒ Show Channel Name
+    - Chat Message ⇒ Ø
 - [ClickEvent](https://ci.md-5.net/job/BungeeCord/ws/chat/target/apidocs/net/md_5/bungee/api/chat/ClickEvent.html) implementation
   - Clicking different parts of a line of chat will perform different actions
-    - Rank/Name => Utilize [SuggestCommand](https://ci.md-5.net/job/BungeeCord/ws/chat/target/apidocs/net/md_5/bungee/api/chat/ClickEvent.Action.html#SUGGEST_COMMAND) to autofill the command to message the player, minus the actual message.
-    - Chat Channel Indicator => Utilize [RunCommand](https://ci.md-5.net/job/BungeeCord/ws/chat/target/apidocs/net/md_5/bungee/api/chat/ClickEvent.Action.html#RUN_COMMAND) to run a command on the user's behalf to automatically switch to that channel
-    - Chat Message => Ø
+    - Rank/Name ⇒ Utilize [SuggestCommand](https://ci.md-5.net/job/BungeeCord/ws/chat/target/apidocs/net/md_5/bungee/api/chat/ClickEvent.Action.html#SUGGEST_COMMAND) to autofill the command to message the player, minus the actual message.
+    - Chat Channel Indicator ⇒ Utilize [RunCommand](https://ci.md-5.net/job/BungeeCord/ws/chat/target/apidocs/net/md_5/bungee/api/chat/ClickEvent.Action.html#RUN_COMMAND) to run a command on the user's behalf to automatically switch to that channel
+    - Chat Message ⇒ Ø
     
     
 . . . WIP . . .
+
+to do:
+- admin commands
+  - send local message
+  - log local chat
+  - mute
+- admin logging
+  - log all chat and its' info to a .log file that, externally, will be saved and deleted each night.
+and more...
