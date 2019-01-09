@@ -722,9 +722,11 @@ public class DarChat extends JavaPlugin implements Listener {
 		} else return message;
 	}
 	
+	
+	// Taken from https://bukkit.org/threads/getnearbyentities-of-a-location.101499/#post-1341141
 	public static Entity[] getNearbyEntities(Location l, int radius) {
 	    int chunkRadius = radius < 16 ? 1 : (radius - (radius % 16)) / 16;
-	    HashSet <Entity> radiusEntities = new HashSet < Entity > ();
+	    HashSet <Entity> radiusEntities = new HashSet <Entity>();
 	 
 	    for (int chX = 0 - chunkRadius; chX <= chunkRadius; chX++) {
 	        for (int chZ = 0 - chunkRadius; chZ <= chunkRadius; chZ++) {
